@@ -49,39 +49,54 @@
         </nav>
       </div>
     </header>
-    <h1 class="title text-align: center">
-      Get things poppin' at your next adventure
-    </h1>
-    <div class="text text-align: center">
-      Find our products at the most luxurious and exclusive locations. Plus,
-      find us at local dives.
-    </div>
+    <section>
+      <h1 class="title text-align: center">
+        Get things poppin' at your next adventure
+      </h1>
+      <br />
 
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var location = {
-          lat: 28.6128666,
-          lng: -81.2070416
-        };
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: location
-        });
-        var market = new google.maps.Marker({
-          position: location,
-          map: map
-        });
-      }
-      AIzaSyAu7fCncuMDvrB8wRSrq9ocZRB83lEQf6g;
-    </script>
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu7fCncuMDvrB8wRSrq9ocZRB83lEQf6g&callback=initMap"
-    ></script>
+      <div class="text text-align: center">
+        Find our products at the most luxurious and exclusive locations. Plus,
+        find us at local dives.
+      </div>
+    </section>
+
+    <div id="map" class="resp-container center bg-dark">
+      <iframe
+        class="resp-iframe"
+        src="https://www.google.com/maps/d/embed?mid=1VSdMNYMKlwSUS3LSwM2FE3HcIO9UOktL"
+        width="640"
+        height="480"
+      ></iframe>
+    </div>
     <footer class="center bg-dark">
       <p>Boujee Boba &copy; 2019</p>
+      <div class="icon">
+        <a
+          style="text-decoration: none"
+          href="https://www.facebook.com/boujeeboba/"
+        >
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a
+          style="text-decoration: none"
+          href="https://www.instagram.com/boujeeboba/"
+        >
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a style="text-decoration: none" href="https://twitter.com/boujee_boba">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a
+          style="text-decoration: none"
+          href="https://www.linkedin.com/company/boujee-boba/about/"
+        >
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a style="text-decoration: none" href="mailto:boujeeboba@gmail.com">
+          <i class="fas fa-envelope fa-2x"></i>
+        </a>
+      </div>
     </footer>
   </body>
 </html>
